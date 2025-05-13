@@ -2,7 +2,7 @@
 import type { HeroProps } from "@types";
 type Props = HeroProps;
 
-const { name, specialty, summary, email } = Astro.props;
+const { name, specialty, summary, email, number, cv } = Astro.props;
 ---
 
 <section class="py-24 md:py-32" id="#hero">
@@ -22,6 +22,18 @@ const { name, specialty, summary, email } = Astro.props;
 
   <a
     class="inline-block rounded-full bg-primary px-8 py-5 text-sm leading-5 font-medium text-[#fff]"
-    href={`mailto:${email}`}>Get in Touch</a
+    href={`mailto:${email}`}>Enviar Correo</a
+  >
+
+  <a
+    class="inline-block rounded-full bg-primary px-8 py-5 text-sm leading-5 font-medium text-[#fff]"
+    target="_blank"
+    href={`https://api.whatsapp.com/send?phone=${number}&text=Hola+Kevin%2C%0AVi+tu+p%C3%A1gina+web+y+me+gustar%C3%ADa+agendar+una+reuni%C3%B3n.+%F0%9F%93%85`}>Enviar WhatsApp</a
+  >
+
+  <a
+    class="inline-block rounded-full bg-primary px-8 py-5 text-sm leading-5 font-medium text-[#fff]"
+    target="_blank"
+    href={`${cv}`}>Descargar CV</a
   >
 </section>

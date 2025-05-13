@@ -1,23 +1,20 @@
 import type { SiteConfig, SiteContent } from "../types";
 
 export const SITE_CONFIG: SiteConfig = {
-  title: "Alejandro Múnez — Mobile & Web Developer",
-  author: "Alejandro Múnez Cuntez",
+  title: "Kevin Lopez Gonzalez",
+  author: "Kevin Lopez Gonzalez",
   description:
-    "Software Engineer based in San Francisco, USA. I specialize in UI design, web and mobile application development and maintenance.",
-  lang: "en",
-  siteLogo: "/alejandro-small.jpg",
+    "Desarrollador freelance en Antofagasta. Creo soluciones digitales a medida para microempresas y pymes: sistemas simples, automatización y reportes que te ayudan a ordenar tu negocio y ahorrar tiempo. Trabajo de forma independiente, con precios accesibles y disponibilidad parcial.",
+  lang: "es",
+  siteLogo: "/kevin-small.jpg",
   navLinks: [
-    { text: "Experience", href: "#experience" },
-    { text: "Projects", href: "#projects" },
-    { text: "About", href: "#about" },
+    { text: "Experiencia", href: "#experience" },
+    //{ text: "Proyectos", href: "#projects" },
+    { text: "Sobre mi", href: "#about" },
   ],
   socialLinks: [
-    { text: "Twitter", href: "https://github.com/immois/astro-zen" },
-    { text: "LinkedIn", href: "https://github.com/immois/astro-zen" },
-    { text: "Github", href: "https://github.com/immois/astro-zen" },
-    { text: "Youtube", href: "https://github.com/immois/astro-zen" },
-    { text: "Dribbble", href: "https://github.com/immois/astro-zen" },
+    { text: "LinkedIn", href: "https://www.linkedin.com/in/kevin-lopez-gonzalez-a26378149/" },
+    { text: "Github", href: "https://github.com/segad82" }
   ],
   socialImage: "/zen-og.png",
   canonicalURL: "https://astro-zen.vercel.app",
@@ -25,41 +22,46 @@ export const SITE_CONFIG: SiteConfig = {
 
 export const SITE_CONTENT: SiteContent = {
   hero: {
-    name: "Alejandro Múnez",
-    specialty: "Mobile & Web Developer",
-    summary:
-      "Developer based in San Francisco, USA. I specialize in UI design, web and mobile application development and maintenance.",
-    email: "example@email.com",
+    name: "Kevin Lopez G.",
+    specialty: "Soluciones Informáticas",
+    summary: `Desarrollador freelance en Antofagasta.
+              Creo soluciones digitales a medida para microempresas y pymes: sistemas simples, automatización y reportes que te ayudan a ordenar tu negocio y ahorrar tiempo.
+              Trabajo de forma independiente, con precios accesibles y disponibilidad parcial.
+              ¿Necesitas una solución práctica? 🧑🏻‍💻📈`,
+    email: "kevin.lopez.gonzalez.it@gmail.com",
+    number: "56984452859",
+    cv: '/CV.pdf'
   },
   experience: [
     {
-      company: "Zalmart",
-      position: "Lead Android Developer",
-      startDate: "May 2018",
-      endDate: "Sept 2020",
+      company: "Holos Consulting",
+      position: "Consultor",
+      startDate: "Sep 2023",
+      endDate: "Actualmente",
       summary: [
-        "Implemented advanced memory management and code optimization techniques, resulting in a reduction in application load time by 40% and a decrease in crashes by 25%. This significantly improved user experience and increased user retention by 20%.",
-        "I led a team of developers in building and integrating new features using Jetpack Android components such as LiveData and ViewModel. This enabled us to build scalable and maintainable applications, reducing the crash rate by 20% and speeding up the time to delivery of new features by 15%.",
-        "Integrated Google Pay for in-app purchases, resulting in a 35% increase in mobile transaction revenue. Additionally, implemented Firebase Analytics to gain insights into user behavior, enabling data-driven optimizations and a 30% increase in user retention.",
+        "Reportes HSE para importante cliente minero: automatización de informes periódicos y “spot” de seguridad, generando vistas detalladas y resumidas por rol y unidad, según criterios de business partners, para identificar tendencias y optimizar la toma de decisiones.",
       ],
     },
     {
-      company: "Bankit",
-      position: "Mobile Developer",
-      startDate: "Feb 2017",
-      endDate: "May 2018",
+      company: "FLSmidth S.A.",
+      position: "IT Operations",
+      startDate: "Abr 2019",
+      endDate: "Sept 2023",
       summary: [
-        "I designed and developed a mobile application using Flutter, allowing it to be deployed on both Android and iOS with a single codebase. This reduced development time by 50% and maintenance costs by 30%, facilitating a consistent user experience on both platforms.",
-        "I integrated biometric authentication and data encryption, significantly improving the security of user data. This implementation resulted in a 40% increase in user trust and a 25% reduction in unauthorized access attempts.",
+        "Elaboración integral de reportes: diseño y optimización de consultas SQL sobre el data warehouse en Snowflake y construcción de paneles e informes en Power BI. (Anteriormente, desarrollé procesos ETL en SSIS para transferir datos a una instancia de SQL Server en Azure.)",
+        "Automatización de integración ERP–DTE: desarrollo de un script en Python que conecta el ERP con el validador de Documentos Tributarios Electrónicos, eliminando tareas manuales y reduciendo errores.",
+        "Mejora y mantenimiento de sistema de inventario: adaptación de una aplicación en PHP/MySQL, añadiendo nuevas funcionalidades y gestionando su control de versiones con GIT."
       ],
     },
     {
-      company: "Driveer",
-      position: "Frontend Developer",
-      startDate: "Jun 2015",
-      endDate: "Oct 2016",
-      summary:
-        "Developed and integrated a real-time vehicle tracking system using WebSockets, improving accuracy and data update in the application. This functionality increased user satisfaction by 30% and reduced customer service inquiries by 25%.",
+      company: "Plataforma Tecnológica",
+      position: "Desarrollador Junior",
+      startDate: "Ene 2013",
+      endDate: "Dic 2013",
+      summary: [
+        "Desarrollo de software cliente-servidor desde cero: participé en todas las fases de creación de una aplicación de escritorio en C#, diseñada bajo patrón MVC, implementada con WPF y respaldada por SQL Server.",
+        "Colaboración en la generación de reportes: elaboré y optimicé consultas SQL para la obtención de datos en múltiples sistemas, mejorando la precisión y eficiencia de los informes."
+      ]
     },
   ],
   projects: [
@@ -87,11 +89,11 @@ export const SITE_CONTENT: SiteContent = {
   ],
   about: {
     description: `
-      Hi, I’m Alejandro Múnez, a passionate Mobile and Web Developer with a knack for crafting seamless digital experiences. With a strong background in both Android and iOS development, as well as front-end web technologies, I thrive in the intersection where creativity meets technology.
-
-      Over the years, I’ve honed my skills in building robust, user-friendly applications that not only meet the needs of users but also push the boundaries of what’s possible. My projects range from innovative mobile applications to responsive web designs, all with a focus on performance, security, and scalability.
+      Hola! soy Kevin, un informático apasionado por transformar datos y procesos en herramientas digitales efectivas.
+      Con experiencia en desarrollo de sistemas a medida en JavaScript y C#, así como en la creación de informes avanzados con Power BI y la automatización de procesos con Python, me muevo en la intersección entre la eficiencia operativa y la innovación tecnológica.
+      Durante mi trayectoria he tenido la oportunidad de realizar ETL's en SSIS, integrar datos de Snowflake, ampliar funcionalidades de proyectos existentes en PHP y construir proyectos desde cero en Node.js, siempre asegurando usabilidad, escalabilidad y continuidad del negocio.
     `,
-    image: "/alejandro-big.jpg",
+    image: "/kevin-big.jpg",
   },
 };
 
