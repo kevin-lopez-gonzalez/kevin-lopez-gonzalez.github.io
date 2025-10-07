@@ -14,7 +14,7 @@ export const SITE_CONFIG: SiteConfig = {
   ],
   socialLinks: [
     { text: "LinkedIn", href: "https://www.linkedin.com/in/kevin-lopez-gonzalez-a26378149/" },
-    { text: "Github", href: "https://github.com/segad82" }
+    { text: "Github", href: "https://github.com/kevin-lopez-gonzalez" }
   ],
   socialImage: "/zen-og.png",
   canonicalURL: "https://kevin-lopez-gonzalez.github.io",
